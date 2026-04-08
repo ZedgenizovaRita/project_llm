@@ -3,6 +3,8 @@ import tool_functions
 import mistral_functions
 from mistral_functions import auto_categorize, call_llm_with_retry, tools, available_functions
 
+load_dotenv()
+
 API_KEY = os.getenv("API_KEY")
 client = Mistral(api_key=API_KEY)
 
